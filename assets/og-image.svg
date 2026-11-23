@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset=".55" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#db2777"/>
+    </linearGradient>
+    <radialGradient id="r1" cx=".85" cy=".15" r=".6">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r2" cx=".1" cy=".95" r=".55">
+      <stop offset="0" stop-color="#db2777" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#db2777" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b1020"/>
+  <rect width="1200" height="630" fill="url(#r1)"/>
+  <rect width="1200" height="630" fill="url(#r2)"/>
+  <g font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <rect x="80" y="80" width="88" height="88" rx="22" fill="url(#g)"/>
+    <text x="124" y="136" text-anchor="middle" font-size="28" font-weight="800" fill="#fff">SKG</text>
+    <text x="192" y="136" font-size="34" font-weight="700" fill="#fff">Digital Solutions</text>
+
+    <text x="80" y="300" font-size="68" font-weight="800" fill="#fff">Modern digital solutions,</text>
+    <text x="80" y="384" font-size="68" font-weight="800" fill="#c4b5fd">delivered on time.</text>
+    <text x="80" y="446" font-size="28" fill="#aab2c8">Software products and custom software, with support after launch.</text>
+
+    <g font-size="24" font-weight="700">
+      <rect x="80" y="500" width="230" height="56" rx="28" fill="#7c3aed" fill-opacity=".22" stroke="#7c3aed"/>
+      <text x="195" y="536" text-anchor="middle" fill="#ddd6fe">InstitutePulse</text>
+      <rect x="326" y="500" width="170" height="56" rx="28" fill="#0d9488" fill-opacity=".22" stroke="#0d9488"/>
+      <text x="411" y="536" text-anchor="middle" fill="#99f6e4">TrackPro</text>
+      <rect x="512" y="500" width="200" height="56" rx="28" fill="#f59e0b" fill-opacity=".22" stroke="#f59e0b"/>
+      <text x="612" y="536" text-anchor="middle" fill="#fde68a">SwapEnergy</text>
+    </g>
+    <text x="1120" y="536" text-anchor="end" font-size="24" fill="#aab2c8">skgdigitalsolutions.com</text>
+  </g>
+</svg>
