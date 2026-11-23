@@ -4,7 +4,7 @@ Company website for **skgdigitalsolutions.com**: a static, single-page site (pla
 
 ## Structure
 ```
-index.html        # single-page site (Hero, Products, InstitutePulse, Services, Industries, Trust, Why SKG, Testimonials, About, Contact)
+index.html        # single-page site (Hero, Products, InstitutePulse, Services, Industries, Trust, Why SKG, About, Contact)
 privacy.html      # Privacy Policy
 terms.html        # Terms of Use
 robots.txt        # crawler rules + sitemap location
@@ -19,9 +19,6 @@ Open `index.html` in a browser, or use the VS Code **Live Server** extension.
 
 ## Before going live
 Content that is still a placeholder (search `[` and `PLACEHOLDER` in `index.html`):
-- [ ] Noida office address (Contact section) and its Google Maps link
-- [ ] Testimonials: real quotes, names and organisations, with permission. Delete any card you can't fill
-- [ ] Client logos (`logo-strip`): replace or remove
 - [ ] InstitutePulse demo video and the three app screenshots
 - [ ] Social links in the footer (`href="#"`): add real URLs or remove the ones you don't use
 - [ ] Contact form: set `data-endpoint` (Web3Forms or Formspree, instructions are in a comment above the form). Until then it only opens the visitor's email app
@@ -56,18 +53,18 @@ The on-page basics are already in `index.html`: title and description, canonical
 2. Make the **name, address and phone (NAP)** identical on the website, Google Business Profile and every directory.
 3. Ask happy clients for **Google reviews**. Reply to every review.
 4. Add the business to directories: JustDial, Sulekha, IndiaMART, Clutch, GoodFirms, LinkedIn company page, and local Jalandhar/Noida business listings.
-5. Add the Noida street address to the page and to the JSON-LD `address` once you have it.
+5. Check the Noida address (KM75 Sector 129) matches your Google Business Profile exactly.
 
 ## 3. Content (what actually earns rankings)
 - **One page per product and service.** A single page can't rank for everything. Create pages such as:
-  - `/institutepulse/` for "school attendance software", "photo attendance system"
+  - `/institutepulse/` for "school attendance software", "AI attendance system"
   - `/trackpro/` for "vehicle tracking software", "school bus tracking"
   - `/swapenergy/` for "battery swap management software"
   - `/web-development-jalandhar/` and `/software-company-noida/` for local searches
 - Each page needs a unique title (under about 60 characters), a unique description (under about 155), one `<h1>`, real copy (300+ words), and its own entry in `sitemap.xml`.
 - **Blog or case studies**: write about problems your customers search for, for example "How schools can cut attendance time", "Choosing GPS tracking for school buses". Publish regularly.
 - **Case studies** with real numbers and client names (with permission) build trust with both visitors and Google.
-- Replace the placeholder testimonials with real ones. Placeholder text hurts quality signals.
+- Add a real client testimonials/stories section later, with permission. Don't publish placeholder text; it hurts quality signals.
 
 ## 4. Backlinks and off-site
 - Get listed on Clutch, GoodFirms, Product Hunt and relevant EdTech/EV directories.
