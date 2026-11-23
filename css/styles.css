@@ -543,3 +543,51 @@ p { margin: 0 0 1em; color: var(--ink-2); }
   .ip-benefit { padding: 24px; }
   .ip-cta { padding: 28px 24px; }
 }
+
+/* ---------- InstitutePulse modules ---------- */
+.modules { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.module {
+  position: relative; overflow: hidden; display: flex; flex-direction: column;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--c) 7%, #fff) 0%, #fff 55%);
+  border: 1px solid var(--line); border-top: 4px solid var(--c);
+  border-radius: var(--radius); padding: 28px; transition: transform .2s, box-shadow .2s;
+}
+.module::after {
+  content: ""; position: absolute; right: -40px; top: -40px; width: 130px; height: 130px; border-radius: 50%;
+  background: var(--c); opacity: .07; pointer-events: none;
+}
+.module:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.module-icon {
+  width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; font-size: 26px; margin-bottom: 16px;
+  background: color-mix(in srgb, var(--c) 14%, #fff);
+}
+.module h4 { font-size: 19px; margin: 0 0 6px; }
+.module p { margin: 0; font-size: 15px; }
+.module .checks { margin: 14px 0 0; padding-left: 0; flex: 0 0 auto; }
+.mini-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 18px; }
+.mini-chips span {
+  font-size: 12px; font-weight: 700; padding: 5px 11px; border-radius: 999px;
+  color: var(--c); background: color-mix(in srgb, var(--c) 10%, #fff); border: 1px solid color-mix(in srgb, var(--c) 22%, #fff);
+}
+.mini-chips-lg span { font-size: 13px; padding: 8px 14px; }
+.mini-bars { display: flex; align-items: flex-end; gap: 6px; height: 64px; margin-top: auto; padding-top: 18px; box-sizing: content-box; }
+.mini-bars i { flex: 0 0 14px; border-radius: 4px 4px 0 0; background: color-mix(in srgb, var(--c) 35%, #fff); }
+.mini-bars i:last-of-type { background: var(--c); }
+.mini-bars b { margin-left: auto; align-self: center; font-size: 28px; color: var(--c); }
+.module-wide { grid-column: span 2; flex-direction: row; align-items: center; gap: 28px; }
+.module-wide .module-body { flex: 1 1 50%; }
+.route-art { flex: 1 1 50%; max-width: 360px; width: 100%; height: auto; border-radius: 18px; box-shadow: 0 8px 24px rgba(217,119,6,.15); }
+.module-banner {
+  grid-column: 1 / -1; flex-direction: row; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+  padding: 24px 28px;
+}
+.module-banner .mini-chips { margin-top: 0; padding-top: 0; }
+@media (max-width: 960px) {
+  .modules { grid-template-columns: 1fr 1fr; }
+  .module-wide { grid-column: 1 / -1; }
+}
+@media (max-width: 640px) {
+  .modules { grid-template-columns: 1fr; }
+  .module-wide { flex-direction: column; align-items: stretch; }
+  .route-art { max-width: none; }
+}

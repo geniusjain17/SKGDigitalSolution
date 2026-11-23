@@ -411,57 +411,87 @@
             <h3 class="ip-h3">More than attendance: run the whole school</h3>
             <p>One login for the school office, teachers, drivers and management, with one view of students, staff and buses.</p>
           </div>
-          <div class="grid-3">
-            <div class="feature reveal">
-              <div class="feature-icon">🎓</div>
+          <div class="modules">
+            <div class="module reveal" style="--c:#2563eb">
+              <div class="module-icon">🎓</div>
               <h4>Students</h4>
               <p>Student records and classes in one place, with each student's attendance history alongside.</p>
+              <div class="mini-chips"><span>Profiles</span><span>Classes</span><span>History</span></div>
             </div>
-            <div class="feature reveal">
-              <div class="feature-icon">✅</div>
+            <div class="module reveal" style="--c:#16a34a">
+              <div class="module-icon">✅</div>
               <h4>Attendance</h4>
-              <p>AI photo attendance, plus average attendance over the last 30 days and a list of students falling below the attendance line.</p>
+              <p>AI photo attendance, plus the 30-day average and a list of students falling below the attendance line.</p>
+              <div class="mini-bars" aria-hidden="true"><i style="height:55%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:85%"></i><i style="height:78%"></i><i style="height:92%"></i><b>88%</b></div>
             </div>
-            <div class="feature reveal">
-              <div class="feature-icon">📚</div>
+            <div class="module reveal" style="--c:#7c3aed">
+              <div class="module-icon">📚</div>
               <h4>Teaching</h4>
               <p>Tools for the academic side of the school, organised by class and section for the current academic year.</p>
+              <div class="mini-chips"><span>Classes</span><span>Sections</span><span>Academic year</span></div>
             </div>
-            <div class="feature reveal">
-              <div class="feature-icon">📣</div>
-              <h4>Communication</h4>
-              <p>Reach parents, staff and classes from the same app, with notifications built in.</p>
+
+            <div class="module module-wide module-transport reveal" style="--c:#d97706">
+              <div class="module-body">
+                <div class="module-icon">🚌</div>
+                <h4>Transport</h4>
+                <p>See where buses are right now, review past trips, manage routes and your fleet, and keep track of who gets picked up.</p>
+                <ul class="checks">
+                  <li>Buses now: live view of every bus</li>
+                  <li>Trip history</li>
+                  <li>Routes and fleet</li>
+                  <li>Pickup people and transport settings</li>
+                </ul>
+              </div>
+              <svg class="route-art" viewBox="0 0 360 240" role="img" aria-label="Illustration of a bus route with stops on a map">
+                <rect width="360" height="240" rx="18" fill="#fff7ed"/>
+                <g stroke="#fde6c8" stroke-width="1"><path d="M0 60h360M0 120h360M0 180h360M90 0v240M180 0v240M270 0v240"/></g>
+                <path d="M30 195 C90 195 90 120 150 120 S230 60 250 60 S320 80 330 40" fill="none" stroke="#fcd9a8" stroke-width="10" stroke-linecap="round"/>
+                <path d="M30 195 C90 195 90 120 150 120 S230 60 250 60 S320 80 330 40" fill="none" stroke="#d97706" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/>
+                <circle cx="30" cy="195" r="9" fill="#fff" stroke="#d97706" stroke-width="3"/>
+                <circle cx="150" cy="120" r="9" fill="#fff" stroke="#d97706" stroke-width="3"/>
+                <circle cx="250" cy="60" r="9" fill="#fff" stroke="#d97706" stroke-width="3"/>
+                <circle cx="330" cy="40" r="11" fill="#d97706"/>
+                <path d="M330 34v12M324 40h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+                <g transform="translate(186 82)"><rect width="46" height="26" rx="7" fill="#f59e0b"/><rect x="5" y="5" width="9" height="8" rx="2" fill="#fff"/><rect x="18" y="5" width="9" height="8" rx="2" fill="#fff"/><rect x="31" y="5" width="9" height="8" rx="2" fill="#fff"/><circle cx="12" cy="27" r="4.5" fill="#1f2937"/><circle cx="35" cy="27" r="4.5" fill="#1f2937"/></g>
+                <g font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#92400e">
+                  <text x="14" y="222">Stop 1</text><text x="130" y="148">Stop 2</text><text x="230" y="40">Stop 3</text><text x="292" y="22">School</text>
+                </g>
+                <g transform="translate(18 18)"><rect width="104" height="30" rx="15" fill="#fff" stroke="#fde6c8"/><circle cx="16" cy="15" r="5" fill="#22c55e"/><text x="28" y="19.5" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#1f2937">Live · 48 km/h</text></g>
+              </svg>
             </div>
-            <div class="feature reveal">
-              <div class="feature-icon">🛡️</div>
+            <div class="module reveal" style="--c:#0ea5e9">
+              <div class="module-icon">🛡️</div>
               <h4>Safety</h4>
               <p>Safety tools for students on campus and on the way to and from school.</p>
+              <div class="mini-chips"><span>On campus</span><span>On the way</span></div>
             </div>
-            <div class="feature reveal">
-              <div class="feature-icon">🚌</div>
-              <h4>Transport</h4>
-              <p>See where buses are right now, review past trips, manage routes and your fleet, and keep track of who gets picked up.</p>
-              <ul class="checks">
-                <li>Buses now: live view of every bus</li>
-                <li>Trip history</li>
-                <li>Routes and fleet</li>
-                <li>Pickup people and transport settings</li>
-              </ul>
+
+            <div class="module reveal" style="--c:#e11d48">
+              <div class="module-icon">📣</div>
+              <h4>Communication</h4>
+              <p>Reach parents, staff and classes from the same app, with notifications built in.</p>
+              <div class="mini-chips"><span>Parents</span><span>Staff</span><span>Classes</span></div>
             </div>
-            <div class="feature reveal">
-              <div class="feature-icon">🧑‍🏫</div>
+            <div class="module reveal" style="--c:#0d9488">
+              <div class="module-icon">🧑‍🏫</div>
               <h4>Teachers and staff</h4>
-              <p>Keep teachers, drivers, bus attendants, office and accounts staff and support staff (peons, cleaners, guards) in one directory. Choose who gets an app login.</p>
+              <p>One directory for everyone who works at the school. You choose who gets an app login.</p>
+              <div class="mini-chips"><span>Teachers</span><span>Drivers</span><span>Bus attendants</span><span>Office &amp; accounts</span><span>Support staff</span></div>
             </div>
-            <div class="feature reveal">
-              <div class="feature-icon">🗂️</div>
+            <div class="module reveal" style="--c:#4f46e5">
+              <div class="module-icon">🗂️</div>
               <h4>Administration</h4>
               <p>Academic years, settings and roles for the school office and management.</p>
+              <div class="mini-chips"><span>Academic year</span><span>Roles</span><span>Settings</span></div>
             </div>
-            <div class="feature reveal">
-              <div class="feature-icon">🌐</div>
-              <h4>Easy to use</h4>
-              <p>Search students and pages from anywhere in the app. Available in multiple languages, with light and dark themes.</p>
+
+            <div class="module module-banner reveal" style="--c:#7c3aed">
+              <div>
+                <h4>Easy for everyone to use</h4>
+                <p>Search students and pages from anywhere in the app.</p>
+              </div>
+              <div class="mini-chips mini-chips-lg"><span>🔍 Quick search</span><span>🌐 Multiple languages</span><span>🌙 Light &amp; dark themes</span><span>🔔 Notifications</span></div>
             </div>
           </div>
         </div>
